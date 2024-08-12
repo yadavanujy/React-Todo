@@ -1,38 +1,132 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+}
+section{
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+.navbar{
+  padding: 20px 0;
+}
+.header{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  background: rgb(177, 227, 249);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search{
+  border: 1px solid rgb(78, 76, 76);
+  outline: none;
+  padding: 8px 8px;
+  border-radius: 30px;
+  /* border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px; */
+  cursor: pointer;
+  background: rgb(207, 239, 247);
+  color:black;
+}
+.searchinput{
+  outline: none;
+  border: none;
+  background: rgb(207, 239, 247);
+  text-align: center;
+}
+.icons{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.searchicon{
+  width: 20px;
+  height: 20px;
+}
+
+.List{
+  background: rgb(164, 221, 235);
+}
+.task_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3,1fr); */
+  gap: 30px;
+  padding: 20px;
+  text-align: justify;
+}
+.edit ,.delete{
+  cursor: pointer;
+}
+.cardicon{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.cardcontainer{
+  position: relative;
+}
+.card-top{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.card{
+  max-width: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  line-height: 22px;
+  height: 250px;
+  border: 1px solid rgb(187, 184, 184);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+}
+.card-header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 80px;
+  height: 30px;
+  padding: 1px 1px !important;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.taskdescription{
+  height: 160px;
+  /* background: rgb(243, 247, 248); */
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding: 10px;
+  font-family: "Crimson Text", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+letter-spacing: -0.5px;
+font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.statuspara{
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  font-weight: bold;
+  color:rgb(255, 102, 0) ;
 }
